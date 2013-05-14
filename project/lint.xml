@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InvalidPackage" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="src\com\example\library\ContactFormActivity.java" />
+        <ignore path="src\com\example\library\CustomizeActivity.java" />
+        <ignore path="src\com\example\library\view\PlacementTextView.java" />
+    </issue>
+</lint>

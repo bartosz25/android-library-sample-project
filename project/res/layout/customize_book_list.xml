@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:minHeight="3dp"
+android:orientation="vertical">
+        <com.example.library.view.PlacementTextView 
+            android:id="@+id/customizeHeaderContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_bottom_border"
+            android:layout_marginTop="4dp"
+            />
+        <com.example.library.view.PlacementTextView 
+            android:id="@+id/customizeWriterContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_bottom_border"
+            android:layout_marginTop="4dp"
+            /> 
+        <com.example.library.view.PlacementTextView 
+            android:id="@+id/customizeDescContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_bottom_border"
+            android:layout_marginTop="4dp"
+            />
+        <com.example.library.view.PlacementTextView 
+            android:id="@+id/customizeActionsContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_bottom_border"
+            android:layout_marginTop="4dp"
+            />
+        
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/customizeConfirm"
+            android:text="@string/customize_submit"
+            android:onClick="submitCustomize"
+        />
+        <LinearLayout
+            android:id="@+id/footerActions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />            
+        <!-- TODO : régler l'include -->
+    <!-- <include android:layout_width="fill_parent" android:id="@+id/layoutOneBook" layout="@layout/_one_book" />--> 
+</LinearLayout>

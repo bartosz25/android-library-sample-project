@@ -1,0 +1,68 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+  
+  <!-- <style name="MyListView" parent="@android:style/Widget.ListView"> 
+    <item name="android:listSelector">@drawable/list_selector</item> 
+  </style> -->
+  <style name="StandardListView" parent="@android:style/Widget.ListView">
+                <item name="android:textColorHint">@color/green</item>
+                <item name="android:textColor">@color/btn_border_sides</item>
+                <!-- propriétés des séparateurs -->
+                <item name="android:divider">@color/text</item>
+                <item name="android:dividerHeight">0.5dp</item>
+        </style>
+  
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/text</item>
+        <item name="android:textColorTertiary">@color/text</item>
+        <item name="android:listViewStyle">@style/StandardListView</item>
+        
+        <!-- <item name="buttonStyle">@android:style/Widget.Button</item>
+        <item name="textAppearanceListItem">?android:attr/textAppearanceLarge</item>
+        <item name="textAppearanceListItemSmall">?android:attr/textAppearanceLarge</item>
+        <item name="listPreferredItemPaddingLeft">6dip</item>
+        <item name="listPreferredItemPaddingRight">6dip</item>
+        <item name="listPreferredItemPaddingStart">6dip</item>
+        <item name="listPreferredItemPaddingEnd">6dip</item>
+        <item name="alertDialogTheme">@android:style/Theme.Dialog.Alert</item>
+        <item name="alertDialogStyle">@android:style/AlertDialog</item>
+        <item name="alertDialogCenterButtons">true</item>
+        <item name="alertDialogIcon">@android:drawable/ic_dialog_alert</item>
+        <item name="toastFrameBackground">@android:drawable/toast_frame</item>
+        <item name="checkboxStyle">@android:style/Widget.CompoundButton.CheckBox</item>
+        <item name="radioButtonStyle">@android:style/Widget.CompoundButton.RadioButton</item>
+        <item name="tabWidgetStyle">@android:style/Widget.TabWidget</item>
+        <item name="textViewStyle">@android:style/Widget.TextView</item>
+        <item name="errorMessageBackground">@android:drawable/popup_inline_error</item>
+        <item name="errorMessageAboveBackground">@android:drawable/popup_inline_error_above</item> -->
+    </style>
+    
+    <style name="error_text_view">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">#FF0000</item>
+            <item name="android:typeface">monospace</item>
+            <item name="android:textStyle">bold</item>
+    </style>
+        
+    <style name="clickable_text">
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

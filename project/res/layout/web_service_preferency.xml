@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout  
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+     >
+    <TextView
+        android:id="@+id/prefRefererUriLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_ref_uri" />
+    <EditText
+        android:id="@+id/prefRefererUri"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+     />
+    
+    <TextView
+        android:id="@+id/prefAboutLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_sync_about" />
+    <EditText
+        android:id="@+id/prefAbout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+     />
+     
+    
+    <TextView
+        android:id="@+id/prefSyncTypeLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_sync_type" />
+    <RadioGroup
+        android:id="@+id/prefBorrowingNotif"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:id="@+id/radioAutomatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_label_auto"  />
+        <RadioButton
+            android:id="@+id/radioManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_label_manual" />
+    </RadioGroup>
+    
+    <LinearLayout
+        android:id="@+id/prefManualyContainer"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!-- android:layout_width="0dp"
+        android:layout_height="0dp"> -->
+    <TextView
+        android:id="@+id/prefSyncDateLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_sync_date" />
+    <DatePicker
+        android:id="@+id/prefSyncManualDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/prefNotiFrequencyLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_sync_frequency" />
+    <Spinner
+        android:id="@+id/prefNotifFrequency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/frequency_list"
+     />
+    </LinearLayout>
+        <Button
+            android:id="@+id/prefButtonSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_btn_submit"
+            android:onClick="handleForm"
+        />
+    
+</LinearLayout>
+</ScrollView>

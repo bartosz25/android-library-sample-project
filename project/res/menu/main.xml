@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item
+  android:id="@+id/lang_change"
+	    android:orderInCategory="100"
+	    android:showAsAction="never"
+	    android:title="@string/lang_change"/>
+
+<!-- 	    android:actionViewClass="android.widget.Spinner" pas obligatoire dans ce cas; 
+Les exemples de son utilité : 
+http://stackoverflow.com/questions/8614293/android-get-view-reference-to-a-menu-item
+http://stackoverflow.com/questions/9935875/changing-view-on-menu-item-in-action-bar
+http://stackoverflow.com/questions/7142722/replacing-an-actionbar-menu-item-icon-with-an-indeterminate-progressbar
+-->
+</menu>

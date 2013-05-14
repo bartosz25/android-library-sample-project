@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="demand_types_list">
+        <item>@string/contact_select_item</item>
+        <item>@string/contact_item_bug</item>
+        <item>@string/contact_item_feature</item>
+        <item>@string/contact_item_congrats</item>
+        <item>@string/contact_item_other</item>
+    </string-array>
+    <string-array name="langs">
+        <item>@string/lang_fr</item>
+        <item>@string/lang_en</item>
+    </string-array>
+    <string-array name="frequency_list">
+        <item>@string/once_a_day</item>
+        <item>@string/once_a_week</item>
+        <item>@string/once_a_month</item>
+    </string-array>
+    <string-array name="frequency_list_codes" tools:ignore="MissingTranslation">
+        <item>ONCE_A_DAY</item>
+        <item>ONCE_A_WEEK</item>
+        <item>ONCE_A_MONTH</item>
+    </string-array>
+    <!-- <string-array name="book_choices">
+        <item>@string/books_all</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>Ź</item>
+        <item>Ż</item>
+    </string-array> -->
+</resources>

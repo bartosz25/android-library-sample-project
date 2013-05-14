@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.library"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+<!--  TODO : implémenter la backup http://developer.android.com/guide/topics/data/backup.html -->
+    <uses-sdk 
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.example.library.context.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.library.TestActivity"
+            android:label="@string/app_name">
+            <intent-filter>                  <!-- <action android:name="android.intent.action.MAIN" /> -->
+                
+                <!-- <category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>  
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.ContactFormActivity"
+            android:label="@string/app_name" >
+            <intent-filter> 
+                <!-- <category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.BookFragmentActivity"
+            android:label="@string/app_name" >
+            <intent-filter>   
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.WaitingListActivity"
+            android:label="@string/app_name" >
+            <intent-filter> 
+               <!--  <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.SendSmsActivity"
+            android:label="@string/app_name" >
+            <intent-filter> 
+              <!--   <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.DisplayWebsiteActivity"
+            android:label="@string/app_name" >
+            <intent-filter> 
+               <!--  <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.CustomizeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+               <!--  <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.OneBookActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+               <!--  <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.WebServicePreferencyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+             <!--    <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.library.SubscriberFragmentActivity"
+            android:label="@string/app_name" >
+            <intent-filter> 
+             <!--    <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <receiver 
+            android:enabled="true"
+            android:name="com.example.library.receiver.WifiConnectionReceiver"
+            android:permission="android.permission.ACCESS_WIFI_STATE">
+            <intent-filter>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver 
+             android:name="com.example.library.receiver.ShutdownReceiver">
+  <intent-filter>
+    <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+  </intent-filter>
+</receiver>
+        
+    </application>
+</manifest>
