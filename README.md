@@ -4,6 +4,7 @@ android-library-sample-project
 Android : sample project for library Android application
 
 Thinks which remain to do : 
+
 1. Add "back to main screen" button at Menu
 2. At onRestart() check if they are any internet connection; if not, show an Toast warning message
 3. If it's not connected to Internet, exceptions occur : instead of it, show an error message
